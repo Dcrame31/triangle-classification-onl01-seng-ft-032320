@@ -18,7 +18,7 @@ class Triangle
     self.side_two == self.side_three || self.side_two == self.side_one || self.side_one == self.side_three
       return  :isosceles
       if self.side_one <1 || self.side_two <1 || self.side_three <1
-        
+        raise TriangleError
     end
     end
   end
