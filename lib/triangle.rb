@@ -9,18 +9,17 @@ class Triangle
   end
   
   def kind
-    if self.side_one == self.side_two && self.side_two == self.side_three 
-      return :equilateral
-    elsif
-    self.side_one != self.side_two && self.side_one != self.side_three && self.side_two != self.side_three
-      return  :scalene
-    elsif
-    self.side_two == self.side_three || self.side_two == self.side_one || self.side_one == self.side_three
-      return  :isosceles
-      if self.side_one <= 0 || self.side_two <= 0 || self.side_three <= 0
+    one = self.side_one
+    two = self.side_two
+    three = self.side_three
+    if one <= 0 || two <= 0 || three <=0 || one + two <= three || two + three <= one || one + three <= two
         raise TriangleError
-        
-    end
+      elsif one == two && two == three && one == three
+        return :equilateral
+      elsif one != two && two != three && one != three
+        return :scalene
+      elsif one == two || two == three || one == three
+        return :isosceles
     end
   end
   
