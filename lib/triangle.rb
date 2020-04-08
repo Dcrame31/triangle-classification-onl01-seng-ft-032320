@@ -15,7 +15,7 @@ class Triangle
     self.side_one != self.side_two && self.side_one != self.side_three && self.side_two != self.side_three
       return  :scalene
     elsif
-    self.side_one == self.side_two || self.side_two == self.side_three 
+    self.side_one == self.side_three 
       return  :isosceles
     end
   end
