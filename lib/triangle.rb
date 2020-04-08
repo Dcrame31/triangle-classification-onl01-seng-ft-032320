@@ -9,7 +9,8 @@ class Triangle
   end
   
   def kind
-    side_one == side_two && side_two == side_three = :equilateral
+    self.side_one == self.side_two && self.side_two == self.side_three = :equilateral
+    
   end
   
   class TriangleError < StandardError
