@@ -12,6 +12,8 @@ class Triangle
     self.side_one == self.side_two && self.side_two == self.side_three = :equilateral
     self.side_one != self.side_two && self.side_one != self.side_three = :scalene
     self.side_one == self.side_two || self.side_two == self.side_three = :isosceles
+    
+    
       
     
   end
