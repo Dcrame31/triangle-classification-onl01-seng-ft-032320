@@ -9,7 +9,9 @@ class Triangle
   end
   
   def kind
-    self.side_one == self.side_two && self.side_two == self.side_three = :equilateral
+    if self.side_one == self.side_two && self.side_two == self.side_three = :equilateral
+    elsif
+      
     
   end
   
