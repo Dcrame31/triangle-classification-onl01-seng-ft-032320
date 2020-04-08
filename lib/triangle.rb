@@ -11,11 +11,12 @@ class Triangle
   def kind
     if self.side_one == self.side_two && self.side_two == self.side_three 
       return :equilateral
-    self.side_one != self.side_two && self.side_one != self.side_three = :scalene
-    self.side_one == self.side_two || self.side_two == self.side_three = :isosceles
-    
-    
-      
+    elsif
+    self.side_one != self.side_two && self.side_one != self.side_three && self.side_two != self.side_three
+      return  :scalene
+    elsif
+    self.side_one == self.side_two || self.side_two == self.side_three 
+      return  :isosceles
     end
   end
   
